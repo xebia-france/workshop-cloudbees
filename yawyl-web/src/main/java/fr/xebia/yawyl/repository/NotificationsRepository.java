@@ -51,4 +51,7 @@ public class NotificationsRepository {
 				.add("type", messageType);
 	}
 
+    public DBCollection getCollection() {
+        return collection;
+    }
 }
