@@ -27,8 +27,6 @@ public class Module extends AbstractModule {
 			return new Mongo().getDB("yawl");
 		} else {
 
-            // )"dharma.mongohq.com"
-
 			String host = System.getProperty("mongoHost");
             System.out.println(host);
 
