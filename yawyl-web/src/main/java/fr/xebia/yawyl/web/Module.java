@@ -26,7 +26,12 @@ public class Module extends AbstractModule {
 		if ("DEV".equals(System.getProperty("XPUA_ENV"))) {
 			return new Mongo().getDB("yawl");
 		} else {
-			String host = "dharma.mongohq.com";
+
+            // )"dharma.mongohq.com"
+
+			String host = System.getProperty("mongoHost");
+            System.out.println(host);
+
 			int port = 10077;
 
 			DB db = new Mongo(host, port).getDB("Sn4vhtpgtmQscYZy66rv6Q");
