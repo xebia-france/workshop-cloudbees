@@ -15,7 +15,7 @@ public class GuiceServletConfig extends GuiceServletContextListener {
 	protected Injector getInjector() {
 		final Map<String, String> params = new HashMap<String, String>();
 
-		params.put("javax.ws.rs.Application", "fr.xebia.yawyl.fr.web.JerseyApplication");
+		params.put("javax.ws.rs.Application", "fr.xebia.yawyl.web.JerseyApplication");
 
 		return Guice.createInjector(
 				new Module(),
