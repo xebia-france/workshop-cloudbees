@@ -32,12 +32,12 @@ public class Module extends AbstractModule {
 			String host = System.getProperty("mongoHost");
             System.out.println(host);
 
-			int port = 10077;
+			int port = Integer.parseInt(System.getProperty("mongoPort"));
 
-			DB db = new Mongo(host, port).getDB("Sn4vhtpgtmQscYZy66rv6Q");
+			DB db = new Mongo(host, port).getDB(System.getProperty("mongoDB"));
 
-			String username = "cloudbees";
-			String password = "c0742f0f0d528d07de4ce7ee3ce941c9";
+			String username = System.getProperty("mongoUser");
+			String password = System.getProperty("mongoPass");
 
 			db.authenticate(username, password.toCharArray());
 
