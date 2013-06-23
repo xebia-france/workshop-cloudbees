@@ -20,17 +20,19 @@ public class Module extends AbstractModule {
 	protected void configure() {
 	}
 
+    //mongodb://cloudbees:c0742f0f0d528d07de4ce7ee3ce941c9@dharma.mongohq.com:10077/Sn4vhtpgtmQscYZy66rv6Q
+
 	protected DB getDb() throws UnknownHostException {
 		if ("DEV".equals(System.getProperty("XPUA_ENV"))) {
 			return new Mongo().getDB("yawl");
 		} else {
-			String host = "tempest.mongohq.com";
-			int port = 10052;
+			String host = "dharma.mongohq.com";
+			int port = 10077;
 
-			DB db = new Mongo(host, port).getDB("Yloh05kyeaoxxkLK6OXQ");
+			DB db = new Mongo(host, port).getDB("Sn4vhtpgtmQscYZy66rv6Q");
 
-			String username = "xpua3";
-			String password = "xpua3";
+			String username = "cloudbees";
+			String password = "c0742f0f0d528d07de4ce7ee3ce941c9";
 
 			db.authenticate(username, password.toCharArray());
 
