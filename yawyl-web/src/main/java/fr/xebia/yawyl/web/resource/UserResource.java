@@ -15,8 +15,6 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-import static fr.xebia.yawyl.repository.NotificationsRepository.newFavoriteArtistNotification;
-
 @Singleton
 @Path("/users")
 public class UserResource {
@@ -53,7 +51,7 @@ public class UserResource {
 		user.updateBadges();
 
 		userRepository.save(user);
-		notificationsRepository.add(newFavoriteArtistNotification(login, name));
+		notificationsRepository.add(NotificationsRepository.newFavoriteArtistNotification(login, name));
 
 		String json = new Gson().toJson(user);
 

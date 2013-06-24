@@ -24,7 +24,7 @@ public class Module extends AbstractModule {
 
 	protected DB getDb() throws UnknownHostException {
 		if ("DEV".equals(System.getProperty("XPUA_ENV"))) {
-			return new Mongo().getDB("yawl");
+			return new Mongo().getDB("yawyl");
 		} else {
 
 			String host = System.getProperty("mongoHost");
