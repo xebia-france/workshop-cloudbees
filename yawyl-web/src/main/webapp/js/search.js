@@ -29,7 +29,7 @@ define(['jquery', 'bootstrap', 'maps', 'jquery', 'cookie'], function ($, bootstr
                 }
 
 
-                return $.post('http://ec2-54-246-72-133.eu-west-1.compute.amazonaws.com:9200/_search/', JSON.stringify(artist), function (data) {
+                return $.post('http://ec2-54-229-70-224.eu-west-1.compute.amazonaws.com:9200/yawyl/artists/_search', JSON.stringify(artist), function (data) {
                     var i = 0,
                         terms = [];
                     for (i = 0; i < data.hits.hits.length; i++) {
@@ -110,7 +110,7 @@ define(['jquery', 'bootstrap', 'maps', 'jquery', 'cookie'], function ($, bootstr
                         }
                     }
                 }
-                $.post('http://ec2-54-246-72-133.eu-west-1.compute.amazonaws.com:9200/_search/', JSON.stringify(artistreq), function (data2) {
+                $.post('http://http://ec2-54-229-70-224.eu-west-1.compute.amazonaws.com:9200/yawyl/artists/_search', JSON.stringify(artistreq), function (data2) {
                     var artist = data2.hits.hits[0]._source;
                     artists[artist.name] = artist;
                     up(artist.name)
@@ -161,7 +161,7 @@ define(['jquery', 'bootstrap', 'maps', 'jquery', 'cookie'], function ($, bootstr
                 }
             }
 
-            $.post('http://ec2-54-246-72-133.eu-west-1.compute.amazonaws.com:9200/_search', JSON.stringify(artist), function (data) {
+            $.post('http://ec2-54-229-70-224.eu-west-1.compute.amazonaws.com:9200/yawyl/artists/_search', JSON.stringify(artist), function (data) {
                 var artist = data.hits.hits[0]._source;
                 artists[artist.name] = artist;
                 up(artist.name);
