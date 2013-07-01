@@ -12,74 +12,61 @@ import java.net.UnknownHostException;
 
 public class Module extends AbstractModule {
 
-	public static final String USERS_COLLECTION = "users";
+    public static final String USERS_COLLECTION = "users";
 
-	public static final String NOTIFS_COLLECTION = "notifications";
+    public static final String NOTIFS_COLLECTION = "notifications";
 
-	@Override
-	protected void configure() {
-	}
+    @Override
+    protected void configure() {
+    }
 
-    //mongodb://cloudbees:c0742f0f0d528d07de4ce7ee3ce941c9@dharma.mongohq.com:10077/Sn4vhtpgtmQscYZy66rv6Q
+    protected DB getDb() throws UnknownHostException {
+        MongoURI mongoURI = new MongoURI(System.getenv("MONGOHQ_URL_YAWYL"));
 
-	protected DB getDb() throws UnknownHostException {
-		if ("DEV".equals(System.getProperty("XPUA_ENV"))) {
-			return new Mongo().getDB("yawyl");
-		} else {
+        DB db = mongoURI.connectDB();
 
-			String host = System.getProperty("mongoHost");
-            System.out.println(host);
+        db.authenticate(mongoURI.getUsername(), mongoURI.getPassword());
 
-			int port = Integer.parseInt(System.getProperty("mongoPort"));
+        return db;
+    }
 
-			DB db = new Mongo(host, port).getDB(System.getProperty("mongoDB"));
+    @Provides
+    @Named(USERS_COLLECTION)
+    public DBCollection createUsersCollection() throws UnknownHostException {
+        DBCollection collection = getDb().getCollection(USERS_COLLECTION);
 
-			String username = System.getProperty("mongoUser");
-			String password = System.getProperty("mongoPass");
+        collection.ensureIndex("artists");
+        collection.ensureIndex(new BasicDBObject("coordinates", "2d"));
 
-			db.authenticate(username, password.toCharArray());
+        return collection;
+    }
 
-			return db;
-		}
-	}
+    @Provides
+    @Named(NOTIFS_COLLECTION)
+    public DBCollection createNotificationsCollection() throws UnknownHostException {
+        DB db = getDb();
 
-	@Provides
-	@Named(USERS_COLLECTION)
-	public DBCollection createUsersCollection() throws UnknownHostException {
-		DBCollection collection = getDb().getCollection(USERS_COLLECTION);
+        if (db.collectionExists(NOTIFS_COLLECTION)) {
+            return db.getCollection(NOTIFS_COLLECTION);
+        } else {
+            DBCollection collection = db.createCollection(NOTIFS_COLLECTION,
+                    BasicDBObjectBuilder.start("capped", true)
+                            .add("size", 20).get());
 
-		collection.ensureIndex("artists");
-		collection.ensureIndex(new BasicDBObject("coordinates", "2d"));
+            collection.ensureIndex("date");
 
-		return collection;
-	}
+            return collection;
+        }
+    }
 
-	@Provides
-	@Named(NOTIFS_COLLECTION)
-	public DBCollection createNotificationsCollection() throws UnknownHostException {
-		DB db = getDb();
-
-		if (db.collectionExists(NOTIFS_COLLECTION)) {
-			return db.getCollection(NOTIFS_COLLECTION);
-		} else {
-			DBCollection collection = db.createCollection(NOTIFS_COLLECTION,
-					BasicDBObjectBuilder.start("capped", true)
-							.add("size", 20).get());
-
-			collection.ensureIndex("date");
-
-			return collection;
-		}
-	}
-
-	@Provides
-	private OAuthService createOAuthServiceForTwitter() {
-		return new ServiceBuilder()
-				.provider(TwitterApi.class)
-				.apiKey("6EK0Es2zfIx4SHaazCNuGg")
-				.apiSecret("NJW1RaSzylevlg0Awfv00mRsmr0Tiq3eyRgojHzA")
-				.callback("http://x.x.x.x:8080/login/twitter/verify/")
-				.build();
-	}
+    @Provides
+    private OAuthService createOAuthServiceForTwitter() {
+        return new ServiceBuilder()
+                .provider(TwitterApi.class)
+                .apiKey("6EK0Es2zfIx4SHaazCNuGg")
+                .apiSecret("NJW1RaSzylevlg0Awfv00mRsmr0Tiq3eyRgojHzA")
+                .callback("http://x.x.x.x:8080/login/twitter/verify/")
+                .build();
+    }
 
 }
