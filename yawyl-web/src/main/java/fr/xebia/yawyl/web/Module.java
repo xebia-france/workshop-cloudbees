@@ -21,7 +21,7 @@ public class Module extends AbstractModule {
     }
 
     protected DB getDb() throws UnknownHostException {
-        MongoURI mongoURI = new MongoURI(System.getenv("MONGOHQ_URL_YAWYL"));
+        MongoURI mongoURI = new MongoURI(System.getProperty("MONGOHQ_URL_YAWYL"));
 
         DB db = mongoURI.connectDB();
 
