@@ -1,0 +1,264 @@
+ol {
+    margin: 0;
+    padding: 0
+}
+
+.c21 {
+    vertical-align: top;
+    width: 468pt;
+    border-style: solid;
+    background-color: #000000;
+    border-color: #000000;
+    border-width: 1pt;
+    padding: 5pt 5pt 5pt 5pt
+}
+
+.c1 {
+    color: #efefef;
+    font-size: 9pt;
+    font-family: "Courier New";
+    font-weight: bold
+}
+
+.c8 {
+    color: #666666;
+    font-size: 12pt;
+    font-family: "Trebuchet MS"
+}
+
+.c20 {
+    color: #f3f3f3;
+    font-size: 9pt;
+    font-family: "Courier New"
+}
+
+.c0 {
+    list-style-type: disc;
+    margin: 0;
+    padding: 0
+}
+
+.c28 {
+    color: #666666;
+    font-family: "Trebuchet MS"
+}
+
+.c11 {
+    line-height: 1.0;
+    text-align: justify
+}
+
+.c25 {
+    color: inherit;
+    text-decoration: inherit
+}
+
+.c32 {
+    color: #efefef;
+    font-size: 9pt
+}
+
+.c3 {
+    height: 11pt;
+    padding-bottom: 3pt
+}
+
+.c10 {
+    line-height: 1.25;
+    text-align: justify
+}
+
+.c13 {
+    font-size: 10pt;
+    font-family: "Courier New"
+}
+
+.c9 {
+    text-align: center;
+    padding-bottom: 3pt
+}
+
+.c31 {
+    max-width: 468pt;
+    padding: 72pt 72pt 72pt 72pt
+}
+
+.c24 {
+    font-size: 9pt;
+    font-family: "Verdana"
+}
+
+.c5 {
+    padding-left: 0pt;
+    margin-left: 36pt
+}
+
+.c18 {
+    padding-bottom: 3pt
+}
+
+.c27 {
+    line-height: 1.25
+}
+
+.c30 {
+    color: #ff0000
+}
+
+.c14 {
+    line-height: 1.0
+}
+
+.c12 {
+    border-collapse: collapse
+}
+
+.c16 {
+    margin-left: 63pt
+}
+
+.c29 {
+    color: #f3f3f3
+}
+
+.c26 {
+    height: 12pt
+}
+
+.c2 {
+    direction: ltr
+}
+
+.c33 {
+    color: #1155cc
+}
+
+.c22 {
+    text-decoration: underline
+}
+
+.c6 {
+    background-color: #ffffff
+}
+
+.c17 {
+    background-color: #eeeeee
+}
+
+.c15 {
+    text-align: center
+}
+
+.c4 {
+    height: 11pt
+}
+
+.c7 {
+    font-weight: bold
+}
+
+.c23 {
+    padding-bottom: 6pt
+}
+
+.c19 {
+    height: 0pt
+}
+
+.title {
+    padding-top: 0pt;
+    line-height: 1.15;
+    text-align: left;
+    color: #000000;
+    font-size: 21pt;
+    font-family: "Trebuchet MS";
+    padding-bottom: 0pt
+}
+
+.subtitle {
+    padding-top: 0pt;
+    line-height: 1.15;
+    text-align: left;
+    color: #666666;
+    font-style: italic;
+    font-size: 13pt;
+    font-family: "Trebuchet MS";
+    padding-bottom: 10pt
+}
+
+li {
+    color: #000000;
+    font-size: 11pt;
+    font-family: "Arial"
+}
+
+p {
+    color: #000000;
+    font-size: 11pt;
+    margin: 0;
+    font-family: "Arial"
+}
+
+h1 {
+    padding-top: 10pt;
+    line-height: 1.15;
+    text-align: left;
+    color: #000000;
+    font-size: 16pt;
+    font-family: "Trebuchet MS";
+    padding-bottom: 0pt
+}
+
+h2 {
+    padding-top: 10pt;
+    line-height: 1.15;
+    text-align: left;
+    color: #000000;
+    font-size: 13pt;
+    font-family: "Trebuchet MS";
+    font-weight: bold;
+    padding-bottom: 0pt
+}
+
+h3 {
+    padding-top: 8pt;
+    line-height: 1.15;
+    text-align: left;
+    color: #666666;
+    font-size: 12pt;
+    font-family: "Trebuchet MS";
+    font-weight: bold;
+    padding-bottom: 0pt
+}
+
+h4 {
+    padding-top: 8pt;
+    line-height: 1.15;
+    text-align: left;
+    color: #666666;
+    font-size: 11pt;
+    text-decoration: underline;
+    font-family: "Trebuchet MS";
+    padding-bottom: 0pt
+}
+
+h5 {
+    padding-top: 8pt;
+    line-height: 1.15;
+    text-align: left;
+    color: #666666;
+    font-size: 11pt;
+    font-family: "Trebuchet MS";
+    padding-bottom: 0pt
+}
+
+h6 {
+    padding-top: 8pt;
+    line-height: 1.15;
+    text-align: left;
+    color: #666666;
+    font-style: italic;
+    font-size: 11pt;
+    font-family: "Trebuchet MS";
+    padding-bottom: 0pt
+}
