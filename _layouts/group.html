@@ -14,30 +14,30 @@ css: ../stylesheets/stylesheet.css
 <p class="c14 c19 c2"><img height="357" src="../images/image49.png" width="556"></p>
 
 <p class="c2 title"><a name="h.u489eo4pqt7k"></a><span>Workshop requirements</span></p>
-<ol class="c1" start="1">
+<ul class="c1" start="1">
     <li class="c7 c2"><span>Git client: GitHub has </span><span class="c16"><a class="c12"
                                                                                href="http://help.github.com/set-up-git-redirect">setup
         tutorials</a></span><span>&nbsp;for all platforms (just perform the &quot;Download and Install Git&quot; step, we&#39;ll set up the SSH key at the beginning of the lab).</span>
     </li>
-</ol>
-<ol class="c1" start="1">
+</ul>
+<ul class="c1" start="1">
     <li class="c7 c2"><span class="c16"><a class="c12" href="http://maven.apache.org/">Apache Maven</a></span><span>&nbsp;(version 3.0.3).</span>
     </li>
-</ol>
-<ol class="c1" start="1">
+</ul>
+<ul class="c1" start="1">
     <li class="c7 c2"><span>SSH client (should already be installed on any Unix platform, will come with Git for Windows).</span>
     </li>
-</ol>
-<ol class="c1" start="1">
+</ul>
+<ul class="c1" start="1">
     <li class="c7 c2"><span class="c16"><a class="c12" href="http://curl.haxx.se/">cURL</a></span><span>&nbsp;command line tool for transferring data with URL syntax.</span>
     </li>
-</ol>
+</ul>
 <p class="c2 title"><a name="h.lmcdkyj9er4r"></a><span>@DEV</span></p>
 
 <h3 class="c2"><a name="h.z9hnyukf8iqt"></a><span>Configure SSH</span></h3>
-<ol class="c1" start="1">
+<ul class="c1" start="1">
     <li class="c7 c2"><span>Backup your existing ~/.ssh folder</span></li>
-</ol>
+</ul>
 <a href="#" name="29847b2da5474a9f7b03a26502bc8c378c7dc731"></a><a href="#" name="0"></a>
 <table cellpadding="0" cellspacing="0" class="c23">
     <tbody>
@@ -49,9 +49,9 @@ css: ../stylesheets/stylesheet.css
     </tr>
     </tbody>
 </table>
-<ol class="c1" start="2">
+<ul class="c1" start="2">
     <li class="c7 c2"><span>Generate your SSH key</span></li>
-</ol>
+</ul>
 <a href="#" name="a81500d40c6d79948cccd6cd57fcb2c058f42e15"></a><a href="#" name="1"></a>
 <table cellpadding="0" cellspacing="0" class="c23">
     <tbody>
@@ -61,9 +61,9 @@ css: ../stylesheets/stylesheet.css
     </tr>
     </tbody>
 </table>
-<ol class="c1" start="3">
+<ul class="c1" start="3">
     <li class="c7 c2"><span>Change access control to your ~/.ssh folder</span></li>
-</ol>
+</ul>
 <a href="#" name="ed00137f55505feee36d8e218714c348d83d7f3b"></a><a href="#" name="2"></a>
 <table cellpadding="0" cellspacing="0" class="c23">
     <tbody>
@@ -74,39 +74,39 @@ css: ../stylesheets/stylesheet.css
     </tr>
     </tbody>
 </table>
-<ol class="c1" start="4">
+<ul class="c1" start="4">
     <li class="c7 c2"><span>C</span><span>onnect to Cloudbees </span><span>through this URL and by using these credentials:</span>
     </li>
-</ol>
+</ul>
 <p class="c14 c2"><span class="c21"><a class="c12" href="https://grandcentral.cloudbees.com/">https://grandcentral.cloudbees.com/</a></span>
 </p>
 
 <p class="c25 c2"><span class="c3">Login:</span><span>&nbsp;{{page.groupId}}</span></p>
 
 <p class="c2 c25"><span class="c3">Password:</span><span>&nbsp;&lt;&lt;Written on your worksheet&gt;&gt;</span></p>
-<ol class="c1" start="5">
+<ul class="c1" start="5">
     <li class="c7 c2"><span>Upload your SSH public key on CloudBees</span></li>
-</ol>
+</ul>
 <p class="c14 c2"><img height="411" src="../images/image18.png" width="623"></p>
 
 <h3 class="c2"><a name="h.zi1tw3dlzrut"></a><span>Create Repository on CloudBees</span></h3>
-<ol class="c1" start="1">
+<ul class="c1" start="1">
     <li class="c7 c2"><span>Go to the CloudBees homepage and click on </span><span class="c3">Repositories</span><span>&nbsp;tab.</span>
     </li>
-</ol>
+</ul>
 <p class="c2"><img height="194" src="../images/image02.png" width="618"></p>
-<ol class="c1" start="1">
+<ul class="c1" start="1">
     <li class="c7 c2"><span>Click on </span><span
             class="c3">Create new code repository</span><span>&nbsp;in </span><span
             class="c3">Code Repositories</span><span>&nbsp;section and indicate the name of your project repository: </span><span
             class="c3">yawyl-{{page.groupId}}</span></li>
-</ol>
+</ul>
 <p class="c19 c2"><img height="364" src="../images/image10.png" width="618"></p>
 
 <h3 class="c2"><a name="h.9jd1rhu7w26k"></a><span>Import your project on CloudBees repository</span></h3>
-<ol class="c1" start="6">
+<ul class="c1" start="6">
     <li class="c7 c2"><span>Clone the project from GitHub</span></li>
-</ol>
+</ul>
 <a href="#" name="291a913857b8339f30f1e260e11e3f8186666502"></a><a href="#" name="3"></a>
 <table cellpadding="0" cellspacing="0" class="c23">
     <tbody>
@@ -116,9 +116,9 @@ css: ../stylesheets/stylesheet.css
     </tr>
     </tbody>
 </table>
-<ol class="c1" start="1">
+<ul class="c1" start="1">
     <li class="c7 c2"><span>Go to directory workshop-cloudbees</span></li>
-</ol>
+</ul>
 <a href="#" name="eedfd14830b7b04649e7b747119fcdb5e71b23eb"></a><a href="#" name="4"></a>
 <table cellpadding="0" cellspacing="0" class="c23">
     <tbody>
@@ -127,9 +127,9 @@ css: ../stylesheets/stylesheet.css
     </tr>
     </tbody>
 </table>
-<ol class="c1" start="1">
+<ul class="c1" start="1">
     <li class="c7 c2"><span>Configure the remote origin according to your CloudBees repository</span></li>
-</ol>
+</ul>
 <a href="#" name="785203705cd01fc9e29c897f031fb95ed5f257a4"></a><a href="#" name="5"></a>
 <table cellpadding="0" cellspacing="0" class="c23">
     <tbody>
@@ -143,9 +143,9 @@ css: ../stylesheets/stylesheet.css
     </tr>
     </tbody>
 </table>
-<ol class="c1" start="2">
+<ul class="c1" start="2">
     <li class="c7 c2"><span>Remove old link with GitHub repository</span></li>
-</ol>
+</ul>
 <a href="#" name="bdcd079e936c91a61cff09eef7c8cc16ef9b52d1"></a><a href="#" name="6"></a>
 <table cellpadding="0" cellspacing="0" class="c23">
     <tbody>
@@ -154,9 +154,9 @@ css: ../stylesheets/stylesheet.css
     </tr>
     </tbody>
 </table>
-<ol class="c1" start="3">
+<ul class="c1" start="3">
     <li class="c7 c2"><span>Push your project to CloudBees</span></li>
-</ol>
+</ul>
 <a href="#" name="5774238238079d17e40be20b9a2b67cb8c74f1a1"></a><a href="#" name="7"></a>
 <table cellpadding="0" cellspacing="0" class="c23">
     <tbody>
@@ -167,71 +167,71 @@ css: ../stylesheets/stylesheet.css
 </table>
 <h3 class="c19 c2"><a name="h.d96o9xco5ue2"></a><span>Create a </span><span
         class="c0">Continuous Integration </span><span>job on Jenkins</span></h3>
-<ol class="c1" start="1">
+<ul class="c1" start="1">
     <li class="c7 c2"><span>Firstly, you have to create a new Jenkins job which will build when a change is pushed to your Git repository</span>
     </li>
-</ol>
-<ol class="c1" start="1">
+</ul>
+<ul class="c1" start="1">
     <li class="c7 c2"><span>Go to the Build Service of CloudBees by clicking on Jenkins CI:</span></li>
-</ol>
+</ul>
 <p class="c14 c2"><img height="263" src="../images/image03.png" width="624"></p>
-<ol class="c1" start="1">
+<ul class="c1" start="1">
     <li class="c7 c2"><span class="c0">Go to the tab view corresponding to your group name </span><span class="c3">{{page.groupId}}</span><span>, and c</span><span
             class="c0">reate a new job from the left menu.</span></li>
-</ol>
+</ul>
 <p class="c14 c2"><img height="327" src="../images/image15.png" width="632"></p>
-<ol class="c1" start="1">
+<ul class="c1" start="1">
     <li class="c7 c2"><span>Name this job </span><span
             class="c3">yawyl-{{page.groupId}}-ci</span><span>&nbsp;and tick </span><span class="c3">Construire un projet maven2 /3</span><span>, then c</span><span>lick on OK button</span>
     </li>
-</ol>
+</ul>
 <p class="c2"><img height="406" src="../images/image51.png" width="563"></p>
 
 <p class="c2"><span class="c8 c3">Configure your Continuous Integration job</span></p>
-<ol class="c1" start="1">
+<ul class="c1" start="1">
     <li class="c7 c2"><span>Now, you have to configure your job, by filling the URL of your source repository and by specifying the Maven goals to execute</span>
     </li>
-</ol>
-<ol class="c1" start="1">
+</ul>
+<ul class="c1" start="1">
     <li class="c7 c2"><span>Specify the JDK version (Sun JDK 1.6)</span></li>
-</ol>
+</ul>
 <p class="c2"><img height="178" src="../images/image31.png" width="416"></p>
-<ol class="c1" start="2">
+<ul class="c1" start="2">
     <li class="c7 c2"><span>In the section </span><span class="c3">Gestion de code source</span><span>, tick Git and specify the URL of the repository:</span>
     </li>
-</ol>
+</ul>
 <p class="c2"><span>&nbsp;</span><span class="c3">ssh://git@git.cloudbees.com/training-{{page.accountId}}/yawyl-{{page.groupId}}.git</span>
 </p>
-<ol class="c1" start="3">
+<ul class="c1" start="3">
     <li class="c7 c2"><span>Then indicate</span><span>&nbsp;the branch to build: </span><span class="c3">master</span>
     </li>
-</ol>
+</ul>
 <p class="c2"><img height="318" src="../images/image00.png" width="642"></p>
-<ol class="c1" start="4">
+<ul class="c1" start="4">
     <li class="c7 c2"><span>In the section </span><span class="c3">Ce qui d&eacute;clenche le build</span><span>, tick only </span><span
             class="c3">Build when a change is pushed to CloudBees forge</span></li>
-</ol>
+</ul>
 <p class="c2"><img height="197" src="../images/image36.png" width="464"></p>
-<ol class="c1" start="5">
+<ul class="c1" start="5">
     <li class="c7 c2"><span>In the section </span><span class="c3">Build</span><span>, specify </span><span class="c3">clean package</span><span>&nbsp;to </span><span
             class="c3">Goals et Options </span><span>field, and v</span><span>erify that </span><span class="c3">POM Racine</span><span>&nbsp;is </span><span
             class="c3">pom.xml</span></li>
-</ol>
+</ul>
 <p class="c2"><img height="138" src="../images/image32.png" width="631"></p>
-<ol class="c1" start="1">
+<ul class="c1" start="1">
     <li class="c7 c2"><span>Now, you can save the job configuration and run it</span></li>
-</ol>
+</ul>
 <p class="c2"><img height="392" src="../images/image26.png" width="603"></p>
 
 <p class="c2"><span class="c8 c3">Fix the test and check the Continuous Integration</span></p>
-<ol class="c1" start="2">
+<ul class="c1" start="2">
     <li class="c2 c7"><span class="c0">You can observe that the project has test failure</span></li>
-</ol>
+</ul>
 <p class="c2"><img height="146" src="../images/image33.png" width="643"></p>
-<ol class="c1" start="1">
+<ul class="c1" start="1">
     <li class="c5 c2"><span class="c0">Go to the file </span><span class="c3 c0">NotificationsRepositoryTest</span><span
             class="c0">&nbsp;and fix the test. Next, commit the file and push them to github.</span></li>
-</ol>
+</ul>
 <a href="#" name="8ff3863eb59856188a50f54a625dbbaed38ddce3"></a><a href="#" name="8"></a>
 <table cellpadding="0" cellspacing="0" class="c23">
     <tbody>
@@ -242,10 +242,10 @@ css: ../stylesheets/stylesheet.css
     </tr>
     </tbody>
 </table>
-<ol class="c1" start="1">
+<ul class="c1" start="1">
     <li class="c5 c2"><span
             class="c0">The Continuous Integration job should be run automatically and go back to stable.</span></li>
-</ol>
+</ul>
 <p class="c19 c2"><img height="121" src="../images/image53.png" width="647"></p>
 
 <p class="c2 title"><a name="h.u5q3xp2e1ouo"></a><span>@INTEG</span></p>
@@ -254,35 +254,35 @@ css: ../stylesheets/stylesheet.css
 </p>
 
 <h3 class="c2"><a name="h.hrbkz0ljsk2u"></a><span>Create your MongoDB instance</span></h3>
-<ol class="c1" start="1">
+<ul class="c1" start="1">
     <li class="c7 c2"><span>Click on </span><span class="c3">Services</span><span>&nbsp;tab, then click on </span><span
             class="c3">MongoHQ</span><span>&nbsp;in the </span><span class="c3">Subscribed Services</span><span>&nbsp;list.</span>
     </li>
-</ol>
+</ul>
 <p class="c2"><img height="482" src="../images/image20.png" width="643"></p>
-<ol class="c1" start="2">
+<ul class="c1" start="2">
     <li class="c7 c2"><span>Create a new MongoDB instance</span><span>&nbsp;</span><span>by clicking on </span><span
             class="c3">Create new mongodb</span><span>&nbsp;link and fill your </span><span
             class="c3">Database Name</span><span>: </span><span class="c3">yawyl-{{page.groupId}}-integ</span><span>, then click on </span><span
             class="c3">Create</span><span>&nbsp;button</span></li>
-</ol>
+</ul>
 <p class="c14 c19 c2"><img height="304" src="../images/image38.png" width="539"></p>
 
 <h3 class="c2"><a name="h.uxvjduqcm2lv"></a><span>Create your application</span></h3>
-<ol class="c1" start="1">
+<ul class="c1" start="1">
     <li class="c7 c2"><span>Click on </span><span class="c3">Apps</span><span>&nbsp;tab, then click on </span><span
             class="c3">Add New Application</span><span>&nbsp;in the left menu, and fill your </span><span class="c3">Application name</span><span>: </span><span
             class="c3">yawyl-{{page.groupId}}-integ</span><span>, finally click on </span><span class="c3">Finish</span><span>&nbsp;button</span>
     </li>
-</ol>
+</ul>
 <h3 class="c2"><a name="h.soefeoufw6fk"></a><img height="447" src="../images/image11.png" width="646"></h3>
-<ol class="c1" start="1">
+<ul class="c1" start="1">
     <li class="c5 c2"><span class="c0">Once your application is ready, click on the </span><span
             class="c3 c0">Configure</span><span class="c0">&nbsp;button</span><span class="c0">, and then on the </span><span
             class="c3 c0">Configuration</span><span class="c0">&nbsp;tab</span></li>
-</ol>
+</ul>
 <p class="c14 c19 c2"><img height="251" src="../images/image09.png" width="624"></p>
-<ol class="c1" start="2">
+<ul class="c1" start="2">
     <li class="c5 c2"><span class="c0">(1) Select </span><span class="c3 c0">Basic Java Webapp</span><span class="c0">&nbsp;</span>
     </li>
     <li class="c5 c2"><span class="c0">(2) C</span><span class="c0">hoose </span><span class="c3 c0">Starter</span><span
@@ -290,8 +290,8 @@ css: ../stylesheets/stylesheet.css
     <li class="c5 c2"><span class="c0">(3) Select </span><span class="c3 c0">Automatic Scaling </span><span class="c0">under </span><span
             class="c3 c0">Redundancy and Scale. </span><span class="c0">A new set of fields appeared to configurue automatic scaling. Select the fields like the following : </span>
     </li>
-</ol>
-<ol class="c11" start="1">
+</ul>
+<ul class="c11" start="1">
     <li class="c26 c19 c2"><span class="c0">Minimum instances -&gt; </span><span class="c3 c0">1 instance</span></li>
     <li class="c26 c19 c2"><span class="c0">Maximum instances -&gt; </span><span class="c3 c0">4 instances</span></li>
     <li class="c19 c2 c26"><span class="c0">Measurement window -&gt; </span><span class="c3 c0">1 minute</span></li>
@@ -301,23 +301,23 @@ css: ../stylesheets/stylesheet.css
     <li class="c26 c19 c2"><span class="c0">Scale Down when -&gt; </span><span
             class="c3 c0">Request Count Average</span><span class="c0">&nbsp;is </span><span
             class="c3 c0">Less Than 10</span></li>
-</ol>
-<ol class="c1" start="1">
+</ul>
+<ul class="c1" start="1">
     <li class="c5 c2"><span class="c0">(4) (5)</span><span class="c0">Tick </span><span class="c3 c0">Enable New Relic RPM application monitoring</span><span
             class="c0">&nbsp;and </span><span class="c3 c0">Enable Papertrail application logging</span></li>
-</ol>
-<ol class="c1" start="1">
+</ul>
+<ul class="c1" start="1">
     <li class="c5 c2"><span class="c0">(6) Click on the </span><span class="c3 c0">Save Changes</span><span class="c0">&nbsp;button at the top of the page</span>
     </li>
-</ol>
+</ul>
 <h3 class="c14 c2"><a name="h.qhfbdzxwwcgs"></a><img height="904" src="../images/image45.png" width="486"></h3>
 
 <h3 class="c10 c15 c2"><a name="h.fyfeir8o50yo"></a><span>Install CloudBees SDK</span></h3><h5 class="c10 c15 c2"><a
         name="h.ly3tkp6ipxoe"></a><span>On MacOS X or Unix</span></h5>
-<ol class="c1" start="1">
+<ul class="c1" start="1">
     <li class="c7 c2"><span>Open a command-line console (launch the Terminal application on OSX) and then download SDK zip file and unzip it into a directory</span>
     </li>
-</ol>
+</ul>
 <a href="#" name="1b329411ebe1024ed14583cab4e452ad07229d30"></a><a href="#" name="9"></a>
 <table cellpadding="0" cellspacing="0" class="c23">
     <tbody>
@@ -329,10 +329,10 @@ css: ../stylesheets/stylesheet.css
     </tr>
     </tbody>
 </table>
-<ol class="c1" start="1">
+<ul class="c1" start="1">
     <li class="c7 c2"><span>Add the </span><span class="c3">BEES_HOME</span><span>&nbsp;variable to your OS-X/linux command line environment by adding the following lines to your ~/.bash_profile (you may need to create this file)</span>
     </li>
-</ol>
+</ul>
 <a href="#" name="81fcf11081eacf117bf94bc38f575027c1f72fc8"></a><a href="#" name="10"></a>
 <table cellpadding="0" cellspacing="0" class="c23">
     <tbody>
@@ -342,9 +342,9 @@ css: ../stylesheets/stylesheet.css
     </tr>
     </tbody>
 </table>
-<ol class="c1" start="1">
+<ul class="c1" start="1">
     <li class="c7 c2"><span>Refresh your terminal&#39;s bash session by executing</span></li>
-</ol>
+</ul>
 <a href="#" name="dbdea66c6fab6568eea3bd0bad284d16481ee568"></a><a href="#" name="11"></a>
 <table cellpadding="0" cellspacing="0" class="c23">
     <tbody>
@@ -355,17 +355,17 @@ css: ../stylesheets/stylesheet.css
     </tbody>
 </table>
 <p class="c10 c15 c2"><span class="c29">On Windows</span></p>
-<ol class="c1" start="1">
+<ul class="c1" start="1">
     <li class="c7 c2"><span>Download the following file : </span><span class="c16"><a class="c12"
                                                                                       href="http://cloudbees-downloads.s3.amazonaws.com/sdk/cloudbees-sdk-1.5.0-bin.zip">cloudbees-sdk</a></span><span>&nbsp;and unzip it</span>
     </li>
     <li class="c7 c2"><span>Open a predefined Bees Console window by double clicking on the BEES_HOME\Bees Console icon. Please avoid a path with spaces in your installation directory ! (eg don&#39;t use Program Files if you can avoid it)</span>
     </li>
-</ol>
+</ul>
 <p class="c2"><span class="c8 c3">Initialize CloudBees SDK</span></p>
-<ol class="c1" start="2">
+<ul class="c1" start="2">
     <li class="c7 c2"><span>Refresh your terminal&#39;s bash session by executing</span></li>
-</ol>
+</ul>
 <a href="#" name="5c17ca5c316e72d7aa63763dadae7914002de0a9"></a><a href="#" name="12"></a>
 <table cellpadding="0" cellspacing="0" class="c23">
     <tbody>
@@ -401,10 +401,10 @@ css: ../stylesheets/stylesheet.css
     </tbody>
 </table>
 <h3 class="c10 c15 c2"><a name="h.u6y1u5yv9etb"></a><span>Bind your MongoDB instance with your application</span></h3>
-<ol class="c1" start="1">
+<ul class="c1" start="1">
     <li class="c7 c2"><span>Once</span><span>&nbsp;SDK installed and initialized, you have to bind your MongoDB instance with your application</span>
     </li>
-</ol>
+</ul>
 <a href="#" name="f9c882df31efc7dd49b2b01c570b1e251f1d8a45"></a><a href="#" name="13"></a>
 <table cellpadding="0" cellspacing="0" class="c23">
     <tbody>
@@ -417,10 +417,10 @@ css: ../stylesheets/stylesheet.css
     </tr>
     </tbody>
 </table>
-<ol class="c1" start="2">
+<ul class="c1" start="2">
     <li class="c7 c2"><span>That will automatically create a system property called </span><span class="c3">MONGOHQ_URL_YAWYL</span><span>&nbsp;that is used in your application</span>
     </li>
-</ol>
+</ul>
 <a href="#" name="a419b82f08e9012f646339ecc4d4c63ebe63a619"></a><a href="#" name="14"></a>
 <table cellpadding="0" cellspacing="0" class="c23">
     <tbody>
@@ -444,7 +444,7 @@ css: ../stylesheets/stylesheet.css
     </tbody>
 </table>
 <h3 class="c2"><a name="h.es2h86mpmt4f"></a><span>Configure Jenkins job to deploy automatically</span></h3>
-<ol class="c1" start="1">
+<ul class="c1" start="1">
     <li class="c7 c2"><span>On the configuration section, we add a </span><span>post build action</span><span>&nbsp;to deploy automatically the application</span>
     </li>
     <li class="c7 c2"><span>On the </span><span class="c3">Actions &agrave; la suite du build</span><span>&nbsp;section, click on </span><span
@@ -454,36 +454,36 @@ css: ../stylesheets/stylesheet.css
             class="c3">Application ID: yawyl-{{page.groupId}}-integ</span><span>, and v</span><span>erify that selected </span><span
             class="c3">Region</span><span>&nbsp;is </span><span class="c3">US</span></li>
     <li class="c7 c2"><span>Click on </span><span class="c3">Save</span><span>&nbsp;button</span></li>
-</ol>
+</ul>
 <p class="c2"><img height="433" src="../images/image16.png" width="629"></p>
-<ol class="c1" start="1">
+<ul class="c1" start="1">
     <li class="c7 c2"><span>Now, launch a build manually, and verify that yawyl application is up and ready on your integration server by using your application URL:</span>
     </li>
-</ol>
+</ul>
 <p class="c14 c2"><span class="c3">http://yawyl-{{page.groupId}}-integ.training-{{page.accountId}}.cloudbees.net/</span>
 </p>
-<ol class="c1" start="1">
+<ul class="c1" start="1">
     <li class="c7 c2"><span>Click on </span><span class="c3">Se connecter</span><span>&nbsp;in order to create an account on your yawyl application, and fill your email address and city, then click on </span><span
             class="c3">Connexion</span></li>
-</ol>
+</ul>
 <p class="c2"><img height="340" src="../images/image29.png" width="648"></p>
-<ol class="c1" start="1">
+<ul class="c1" start="1">
     <li class="c7 c2"><span>Your are now connected, enjoy!</span></li>
-</ol>
+</ul>
 <p class="c2"><img height="403" src="../images/image39.png" width="649"></p>
 
 <h3 class="c2"><a name="h.6dphwjmftndm"></a><span>Check account creation in MongoDB</span></h3>
-<ol class="c1" start="5">
+<ul class="c1" start="5">
     <li class="c7 c2"><span>Go to the </span><span class="c3">Services</span><span>&nbsp;tab and click on </span><span
             class="c3">manage</span><span>&nbsp;on </span><span class="c3">MongoHQ</span><span>&nbsp;section, then on your MongoDB resource, click on </span><span
             class="c3">View</span><span>&nbsp;button</span></li>
-</ol>
+</ul>
 <p class="c2"><img height="352" src="../images/image46.png" width="454"></p>
-<ol class="c1" start="1">
+<ul class="c1" start="1">
     <li class="c7 c2"><span>2 new collections have been created: </span><span class="c3">notifications</span><span>&nbsp;and </span><span
             class="c3">users</span><span>, and if you go into </span><span class="c3">users</span><span>&nbsp;collection, you can see your user account information</span>
     </li>
-</ol>
+</ul>
 <p class="c2"><img height="349" src="../images/image30.png" width="610"></p>
 
 <p class="c2 title"><a name="h.yjpt3sor0yc4"></a><span>@TEST</span></p>
@@ -491,36 +491,36 @@ css: ../stylesheets/stylesheet.css
 <h3 class="c2"><span>Run Selenium tests from the cloud</span></h3>
 
 <p class="c2"><img height="327" src="../images/image15.png" width="632"></p>
-<ol class="c1" start="1">
+<ul class="c1" start="1">
     <li class="c7 c2"><span>Name this job </span><span
             class="c3">yawyl-{{page.groupId}}-test</span><span>&nbsp;and tick </span><span class="c3">Construire un projet free-style</span><span>, then click on OK button</span>
     </li>
-</ol>
+</ul>
 <p class="c2"><img height="392" src="../images/image05.png" width="692"></p>
 
 <p class="c2"><span class="c3 c8">Configure your Continuous Integration job</span></p>
-<ol class="c1" start="2">
+<ul class="c1" start="2">
     <li class="c7 c2"><span>Now, you have to configure your job, by filling the URL of your source repository and by specifying the Maven goals to execute</span>
     </li>
-</ol>
-<ol class="c1" start="6">
+</ul>
+<ul class="c1" start="6">
     <li class="c7 c2"><span>Specify the JDK version (Sun JDK 1.6)</span></li>
-</ol>
+</ul>
 <p class="c2"><img height="178" src="../images/image31.png" width="416"></p>
-<ol class="c1" start="7">
+<ul class="c1" start="7">
     <li class="c7 c2"><span>In the section </span><span class="c3">Gestion de code source</span><span>, tick Git and specify the URL of the repository:</span>
     </li>
-</ol>
+</ul>
 <p class="c2"><span>&nbsp;</span><span class="c3">ssh://git@git.cloudbees.com/training-{{page.accountId}}/yawyl-{{page.groupId}}.git</span>
 </p>
-<ol class="c1" start="8">
+<ul class="c1" start="8">
     <li class="c7 c2"><span>Then indicate the branch to build: </span><span class="c3">master</span></li>
     <li class="c7 c2"><span>In the section </span><span class="c3">Ce qui d&eacute;clenche le build</span><span>, tick only </span><span
             class="c3">Construire &agrave; la suite d&rsquo;autres projets (projets &nbsp;en amont)</span><span>, and type </span><span
             class="c3">yawyl-{{page.goupId}}-ci </span><span>on Noms des projets</span></li>
-</ol>
+</ul>
 <p class="c2"><img height="221" src="../images/image40.png" width="463"></p>
-<ol class="c1" start="10">
+<ul class="c1" start="10">
     <li class="c7 c2"><span>In the section </span><span
             class="c3">Environnements de Build</span><span>, tick only</span><span class="c3">&nbsp;Sauce OnDemand Support</span>
     </li>
@@ -530,22 +530,22 @@ css: ../stylesheets/stylesheet.css
     </li>
     <li class="c7 c2"><span>On starting URL, indicate the url of the application </span><span class="c3">http://yawyl-{{page.groupId}}-integ.training-{{page.accountId}}.cloudbees.net/</span>
     </li>
-</ol>
+</ul>
 <p class="c2"><img height="471" src="../images/image06.png" width="602"></p>
-<ol class="c1" start="1">
+<ul class="c1" start="1">
     <li class="c7 c2"><span>On the section Build, click on </span><span
             class="c3">Ajouter une &eacute;tape au build</span><span>, and choice </span><span class="c3">Invoquer les cibles maven de haut niveau</span>
     </li>
-</ol>
-<ol class="c1" start="1">
+</ul>
+<ul class="c1" start="1">
     <li class="c5 c2"><span class="c0">and indicate the Maven goal </span><span
             class="c3 c13">clean verify -P selenium</span></li>
     <li class="c5 c2"><span class="c13">Click on </span><span class="c13 c3">sauver</span></li>
-</ol>
+</ul>
 <p class="c2"><img height="238" src="../images/image22.png" width="436"></p>
-<ol class="c1" start="1">
+<ul class="c1" start="1">
     <li class="c7 c2"><span>You can click on sauceLab icon to show your test result.</span></li>
-</ol>
+</ul>
 <p class="c2"><img height="103" src="../images/image23.png" width="666"></p>
 
 <p class="c2"><img height="64" src="../images/image27.png" width="590"></p>
@@ -553,14 +553,14 @@ css: ../stylesheets/stylesheet.css
 <p class="c2 title"><a name="h.c8qcsc6761f"></a><span>@RUN</span></p>
 
 <h3 class="c2"><a name="h.l2xc8iu6jxj6"></a><span>Create and Configure your Production Application</span></h3>
-<ol class="c1" start="1">
+<ul class="c1" start="1">
     <li class="c7 c2"><span>On the left-hand side menu </span><span
             class="c3">Applications</span><span>, click on </span><span class="c3">Add New application</span></li>
     <li class="c7 c2"><span>Create a new application on RUN@cloud named </span><span
             class="c3">yawyl-{{page.groupId}}</span></li>
-</ol>
+</ul>
 <p class="c14 c19 c2"><img height="390" src="../images/image43.png" width="605"></p>
-<ol class="c1" start="5">
+<ul class="c1" start="5">
     <li class="c5 c2"><span class="c0">Once your application is ready, click on the </span><span
             class="c3 c0">Configure</span><span class="c0">&nbsp;button, and then on the </span><span class="c3 c0">Configuration</span><span
             class="c0">&nbsp;tab</span></li>
@@ -568,20 +568,20 @@ css: ../stylesheets/stylesheet.css
             class="c3 c0">Starter</span><span class="c0">&nbsp;plan and select </span><span
             class="c3 c0">2 Instances </span><span class="c0">under </span><span
             class="c3 c0">Redundancy and Scale</span></li>
-</ol>
-<ol class="c1" start="2">
+</ul>
+<ul class="c1" start="2">
     <li class="c2 c5"><span class="c0">Tick </span><span
             class="c3 c0">Enable New Relic RPM application monitoring</span><span class="c0">&nbsp;and </span><span
             class="c3 c0">Enable Papertrail application logging</span></li>
-</ol>
-<ol class="c1" start="2">
+</ul>
+<ul class="c1" start="2">
     <li class="c5 c2"><span class="c0">Click on the </span><span class="c3 c0">Save Changes</span><span class="c0">&nbsp;button at the top of the page</span>
     </li>
-</ol>
+</ul>
 <h3 class="c2 c14"><img height="918" src="../images/image48.png" width="578"></h3>
 
 <h3 class="c2"><span>Configure a new MongoDB database</span></h3>
-<ol class="c1" start="3">
+<ul class="c1" start="3">
     <li class="c7 c2"><span>Click on </span><span class="c3">Services</span><span>&nbsp;tab, then click on </span><span
             class="c3">MongoHQ</span><span>&nbsp;in the </span><span class="c3">Subscribed Services</span><span>&nbsp;list.</span>
     </li>
@@ -589,11 +589,11 @@ css: ../stylesheets/stylesheet.css
             class="c3">Create new mongodb</span><span>&nbsp;link and fill your </span><span
             class="c3">Database Name</span><span>: </span><span class="c3">yawyl-{{page.groupId}}-prod</span><span>, then click on </span><span
             class="c3">Create</span><span>&nbsp;button</span></li>
-</ol>
+</ul>
 <p class="c14 c2 c19"><img height="264" src="../images/image34.png" width="283"></p>
-<ol class="c1" start="1">
+<ul class="c1" start="1">
     <li class="c7 c10 c15 c2"><span>Bind your MongoDB instance with your application</span></li>
-</ol>
+</ul>
 <a href="#" name="fda0304fc120b0020dbf4daba2726a3c7898274e"></a><a href="#" name="15"></a>
 <table cellpadding="0" cellspacing="0" class="c23">
     <tbody>
@@ -608,112 +608,112 @@ css: ../stylesheets/stylesheet.css
 </table>
 <h3 class="c2"><a name="h.3l65joee0dur"></a><span>Create a Jenkins job for deploying application on Production environment</span>
 </h3>
-<ol class="c1" start="1">
+<ul class="c1" start="1">
     <li class="c7 c2"><span>Open Jenkins window by clicking on </span><span class="c3">Builds</span><span>&nbsp;on the top left menu</span>
     </li>
-</ol>
+</ul>
 <p class="c19 c2"><img height="237" src="../images/image47.png" width="611"></p>
-<ol class="c1" start="1">
+<ul class="c1" start="1">
     <li class="c5 c2"><span class="c0">Create a new Jenkins Job with the job name </span><span class="c3 c0">yawyl-{{page.groupId}}-prod</span><span
             class="c0">&nbsp;and tick </span><span class="c3 c0">Copier un Job existant</span><span class="c0">, then specify </span><span
             class="c3 c0">yawyl-{{page.groupId}}-ci</span><span class="c0">&nbsp;and click on </span><span
             class="c3 c0">OK</span><span class="c0">&nbsp;button</span></li>
-</ol>
+</ul>
 <p class="c14 c19 c2"><img height="360" src="../images/image08.png" width="619"></p>
-<ol class="c1" start="6">
+<ul class="c1" start="6">
     <li class="c7 c2"><span>On the configuration section, update the post build action to deploy automatically the application in your production environment</span>
     </li>
     <li class="c7 c2"><span>On </span><span class="c3">Applications</span><span>&nbsp;section, fill your </span><span
             class="c3">Application ID: yawyl-{{page.groupId}}</span><span>, and verify that selected </span><span
             class="c3">Region</span><span>&nbsp;is </span><span class="c3">US</span></li>
     <li class="c7 c2"><span>Click on </span><span class="c3">Save</span><span>&nbsp;button</span></li>
-</ol>
+</ul>
 <p class="c2"><img height="433" src="../images/image17.png" width="629"></p>
-<ol class="c1" start="2">
+<ul class="c1" start="2">
     <li class="c7 c2"><span>Now, launch a build manually, and verify that yawyl application is up and ready on your production server by using your application URL:</span>
     </li>
-</ol>
+</ul>
 <p class="c14 c2"><span class="c3">http://yawyl-{{page.groupId}}.training-{{page.accountId}}.cloudbees.net/</span></p>
-<ol class="c1" start="1">
+<ul class="c1" start="1">
     <li class="c7 c2"><span>Now, y</span><span>our application is live in production, yeah!</span></li>
-</ol>
+</ul>
 <p class="c2 title"><a name="h.ori77dfblj0w"></a><img height="271" src="../images/image19.png" width="619"></p>
 
 <p class="c2 title"><a name="h.ouhvyq4s7b7a"></a><span>@PERF</span></p>
 
 <p class="c2"><span class="c8 c3">Get your New Relic API key</span></p>
-<ol class="c1" start="1">
+<ul class="c1" start="1">
     <li class="c7 c2"><span>First, you must find your new relic API key. For this, go in the </span><span class="c3">Services</span><span>&nbsp;tab and select </span><span
             class="c3">New Relic</span></li>
-</ol>
-<ol class="c1" start="1">
+</ul>
+<ul class="c1" start="1">
     <li class="c7 c2"><span>Go in the </span><span class="c3">Services</span><span>&nbsp;tab and select </span><span
             class="c3">BlazeMeter</span><span>&nbsp;service</span></li>
-</ol>
+</ul>
 <p class="c2"><img height="425" src="../images/image35.png" width="617"></p>
-<ol class="c1" start="1">
+<ul class="c1" start="1">
     <li class="c7 c2"><span>Go to </span><span class="c3">Account settings</span><span>&nbsp;menu </span></li>
-</ol>
+</ul>
 <p class="c2"><img height="126" src="../images/image04.png" width="553"></p>
-<ol class="c1" start="1">
+<ul class="c1" start="1">
     <li class="c7 c2"><span>Then go to the </span><span
             class="c3">Integrations</span><span>&nbsp;menu and select </span><span class="c3">Data sharing</span><span>&nbsp;item</span>
     </li>
-</ol>
+</ul>
 <p class="c2"><img height="168" src="../images/image28.png" width="622"></p>
-<ol class="c1" start="1">
+<ul class="c1" start="1">
     <li class="c7 c2"><span>Copy your API key and keep it safety</span></li>
-</ol>
+</ul>
 <p class="c2"><img height="508" src="../images/image42.png" width="562"></p>
 
 <p class="c2"><span class="c8 c3">Create on stress test</span></p>
-<ol class="c1" start="1">
+<ul class="c1" start="1">
     <li class="c7 c2"><span>Go to the </span><span class="c3">Services</span><span>&nbsp;tab and select </span><span
             class="c3">BlazeMeter</span><span>&nbsp;service</span></li>
-</ol>
+</ul>
 <p class="c2"><img height="425" src="../images/image14.png" width="617"></p>
-<ol class="c1" start="1">
+<ul class="c1" start="1">
     <li class="c7 c2"><span>Click on </span><span class="c3">Add test</span><span>&nbsp;link in the header menu, name your test, verify the location and select </span><span
             class="c3">GET and POST Requests</span></li>
-</ol>
+</ul>
 <p class="c2"><img height="268" src="../images/image21.png" width="593"></p>
-<ol class="c1" start="1">
+<ul class="c1" start="1">
     <li class="c7 c2"><span>Simulate user activity by adding requests</span></li>
     <li class="c7 c2"><span>First, go to the homepage</span></li>
-</ol>
+</ul>
 <p class="c2"><img height="64" src="../images/image24.png" width="617"></p>
-<ol class="c1" start="1">
+<ul class="c1" start="1">
     <li class="c7 c2"><span>Second, login to yawyl</span></li>
-</ol>
+</ul>
 <p class="c2"><img height="134" src="../images/image37.png" width="640"></p>
-<ol class="c1" start="1">
+<ul class="c1" start="1">
     <li class="c7 c2"><span>Then, add three artists : Nirvana, Eazy-E and M</span></li>
-</ol>
+</ul>
 <p class="c2"><img height="388" src="../images/image07.png" width="622"></p>
-<ol class="c1" start="1">
+<ul class="c1" start="1">
     <li class="c7 c2"><span>Finally, search artists near Paris (longitude: 2.3522219, latitude: 48.856614)</span></li>
-</ol>
+</ul>
 <p class="c2"><img height="60" src="../images/image13.png" width="612"></p>
-<ol class="c1" start="1">
+<ul class="c1" start="1">
     <li class="c7 c2"><span>Set up the number of users and the ramp</span></li>
-</ol>
+</ul>
 <p class="c2"><img height="381" src="../images/image25.png" width="616"></p>
-<ol class="c1" start="1">
+<ul class="c1" start="1">
     <li class="c7 c2"><span>Set up your New Relic API key</span></li>
-</ol>
+</ul>
 <p class="c2"><img height="126" src="../images/image01.png" width="325"></p>
-<ol class="c1" start="1">
+<ul class="c1" start="1">
     <li class="c7 c2"><span>Select your application and the metric (</span><span
             class="c3">Instance</span><span>&nbsp;- </span><span class="c3">average_value</span><span>) you want to monitor</span>
     </li>
-</ol>
+</ul>
 <p class="c2"><img height="491" src="../images/image50.png" width="362"></p>
-<ol class="c1" start="1">
+<ul class="c1" start="1">
     <li class="c7 c2"><span>Finally </span><span class="c3">Save</span><span>&nbsp;your changes (</span><span
             class="c30">do not </span><span class="c30 c3">Save &amp; Start</span><span>)</span></li>
-</ol>
+</ul>
 <p class="c2"><span class="c8 c3">Bind the stress test to your Jenkins job</span></p>
-<ol class="c1" start="9">
+<ul class="c1" start="9">
     <li class="c7 c2"><span>Go to the </span><span class="c3">Builds</span><span>&nbsp;view using the header menu and open your job </span><span
             class="c3">yawyl-{{page.groupId}}-ci</span></li>
     <li class="c7 c2"><span>On the configuration section, add a post build action to start </span><span class="c3">BlazeMeter</span><span>&nbsp;test</span>
@@ -724,36 +724,36 @@ css: ../stylesheets/stylesheet.css
     <li class="c7 c2"><span>Select your </span><span
             class="c3">BlazeMeter Test</span><span>&nbsp;and set up thresholds</span></li>
     <li class="c7 c2"><span>Click on </span><span class="c3">Save</span><span>&nbsp;button</span></li>
-</ol>
+</ul>
 <p class="c2"><img height="195" src="../images/image44.png" width="647"></p>
-<ol class="c1" start="1">
+<ul class="c1" start="1">
     <li class="c7 c2"><span>Launch your job</span></li>
-</ol>
+</ul>
 <h3 class="c2"><span>Monitoring with New Relic</span></h3>
-<ol class="c1" start="1">
+<ul class="c1" start="1">
     <li class="c7 c2"><span>Click on the services link in the top bar.</span></li>
-</ol>
-<ol class="c1" start="1">
+</ul>
+<ul class="c1" start="1">
     <li class="c7 c2"><span>Click on the </span><span
             class="c3">New Relic</span><span>&nbsp;icon. You can read a brief </span><span class="c16"><a class="c12"
                                                                                                           href="http://wiki.cloudbees.com/bin/view/RUN/NewRelic">presentation</a></span><span>&nbsp;in the wiki.</span>
     </li>
-</ol>
-<ol class="c1" start="1">
+</ul>
+<ul class="c1" start="1">
     <li class="c7 c2"><span>Select your application </span></li>
-</ol>
+</ul>
 <p class="c2"><img height="90" src="../images/image41.png" width="579"></p>
-<ol class="c1" start="1">
+<ul class="c1" start="1">
     <li class="c7 c2"><span>Verify elasticity by checking how many servers are running. Before, we had two instances but when tests start, two new instances had spawn</span>
     </li>
-</ol>
+</ul>
 <p class="c2 c10"><img height="415" src="../images/image52.png" width="648"></p>
-<ol class="c1" start="1">
+<ul class="c1" start="1">
     <li class="c7 c2"><span>You can also check </span><span
             class="c3">BlazeMeter</span><span>&nbsp;report in </span><span class="c3">BlazeMeter</span><span>&nbsp;service</span>
     </li>
     <li class="c7 c2"><span>Go to the </span><span class="c3">BlazeMeter</span><span>&nbsp;service, click on the b tab, select your test scenario </span><span
             class="c3">Yawyl load test</span><span>, click on the </span><span class="c3">Report</span><span>&nbsp;link in the inner tab and finally select the </span><span
             class="c3">LOAD RESULTS</span><span>&nbsp;tab (if not selected)</span></li>
-</ol>
+</ul>
 <p class="c19 c2"><img height="480" src="../images/image12.png" width="648"></p>
