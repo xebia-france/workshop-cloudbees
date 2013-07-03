@@ -8,6 +8,6 @@ public class NotificationsRepositoryTest {
 
     @Test
     public void shouldCreateCappedCollection() {
-        assertThat("paul").contains("paul");
+        assertThat("paul").contains("pao");
     }
 }
