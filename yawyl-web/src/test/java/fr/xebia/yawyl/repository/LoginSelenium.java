@@ -27,9 +27,6 @@ public class LoginSelenium {
 
         String sauce_user_name = System.getenv("SAUCE_USER_NAME");
         String sauce_api_key = System.getenv("SAUCE_API_KEY");
-//
-//        sauce_user_name = "cb_training-2";
-//        sauce_api_key = "afd3bf05-ed71-4072-a0b9-0ef8c3d45c77";
 
         this.driver = new RemoteWebDriver(
                 new URL(String.format("http://%s:%s@ondemand.saucelabs.com:80/wd/hub", sauce_user_name, sauce_api_key)),
