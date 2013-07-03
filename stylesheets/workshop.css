@@ -3,7 +3,7 @@ ol {
     padding: 0
 }
 
-.c21 {
+.c17 {
     vertical-align: top;
     width: 468pt;
     border-style: solid;
@@ -13,11 +13,22 @@ ol {
     padding: 5pt 5pt 5pt 5pt
 }
 
-.c1 {
-    color: #efefef;
+.c11 {
+    list-style-type: circle;
+    margin: 0;
+    padding: 0
+}
+
+.c5 {
+    padding-left: 0pt;
+    margin-left: 36pt;
+    padding-bottom: 3pt
+}
+
+.c9 {
+    color: #f3f3f3;
     font-size: 9pt;
-    font-family: "Courier New";
-    font-weight: bold
+    font-family: "Courier New"
 }
 
 .c8 {
@@ -26,56 +37,41 @@ ol {
     font-family: "Trebuchet MS"
 }
 
-.c20 {
-    color: #f3f3f3;
+.c4 {
+    color: #efefef;
     font-size: 9pt;
     font-family: "Courier New"
 }
 
-.c0 {
+.c1 {
     list-style-type: disc;
     margin: 0;
     padding: 0
 }
 
-.c28 {
-    color: #666666;
-    font-family: "Trebuchet MS"
+.c18 {
+    font-size: 9pt;
+    font-family: "Verdana"
 }
 
-.c11 {
-    line-height: 1.0;
-    text-align: justify
-}
-
-.c25 {
-    color: inherit;
-    text-decoration: inherit
-}
-
-.c32 {
+.c22 {
     color: #efefef;
     font-size: 9pt
 }
 
-.c3 {
-    height: 11pt;
-    padding-bottom: 3pt
+.c7 {
+    padding-left: 0pt;
+    margin-left: 36pt
 }
 
-.c10 {
-    line-height: 1.25;
-    text-align: justify
-}
-
-.c13 {
+.c24 {
     font-size: 10pt;
     font-family: "Courier New"
 }
 
-.c9 {
-    text-align: center;
-    padding-bottom: 3pt
+.c26 {
+    padding-left: 0pt;
+    margin-left: 72pt
 }
 
 .c31 {
@@ -83,86 +79,83 @@ ol {
     padding: 72pt 72pt 72pt 72pt
 }
 
-.c24 {
-    font-size: 9pt;
-    font-family: "Verdana"
-}
-
-.c5 {
-    padding-left: 0pt;
-    margin-left: 36pt
-}
-
-.c18 {
-    padding-bottom: 3pt
-}
-
-.c27 {
-    line-height: 1.25
-}
-
-.c30 {
-    color: #ff0000
-}
-
-.c14 {
-    line-height: 1.0
+.c16 {
+    color: #1155cc;
+    text-decoration: underline
 }
 
 .c12 {
-    border-collapse: collapse
-}
-
-.c16 {
-    margin-left: 63pt
+    color: inherit;
+    text-decoration: inherit
 }
 
 .c29 {
+    color: #666666;
+    font-family: "Trebuchet MS"
+}
+
+.c10 {
+    line-height: 1.25
+}
+
+.c25 {
+    margin-left: 63pt
+}
+
+.c14 {
+    text-align: center
+}
+
+.c27 {
+    height: 11pt
+}
+
+.c23 {
+    border-collapse: collapse
+}
+
+.c13 {
+    background-color: #eeeeee
+}
+
+.c20 {
+    height: 0pt
+}
+
+.c6 {
+    line-height: 1.0
+}
+
+.c15 {
+    text-align: justify
+}
+
+.c28 {
     color: #f3f3f3
 }
 
-.c26 {
-    height: 12pt
+.c19 {
+    padding-bottom: 3pt
 }
 
 .c2 {
     direction: ltr
 }
 
-.c33 {
-    color: #1155cc
-}
-
-.c22 {
+.c21 {
     text-decoration: underline
 }
 
-.c6 {
-    background-color: #ffffff
+.c30 {
+    color: #ff0000
 }
 
-.c17 {
-    background-color: #eeeeee
-}
-
-.c15 {
-    text-align: center
-}
-
-.c4 {
-    height: 11pt
-}
-
-.c7 {
+.c3 {
     font-weight: bold
 }
 
-.c23 {
-    padding-bottom: 6pt
-}
-
-.c19 {
-    height: 0pt
+.c0 {
+    background-color: #ffffff
 }
 
 .title {
