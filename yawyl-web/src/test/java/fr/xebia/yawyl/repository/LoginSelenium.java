@@ -21,9 +21,15 @@ public class LoginSelenium {
     @Before
     public void setUp() throws Exception {
 
+        String sauce_base_url = System.getenv("SELENIUM_STARTING_URL");
+
+        String[] split = sauce_base_url.split("-");
+        String groupId = split[1];
+
         DesiredCapabilities capabillities = DesiredCapabilities.firefox();
         capabillities.setCapability("version", "5");
         capabillities.setCapability("platform", Platform.MAC);
+        capabillities.setCapability("name", "[" +  groupId + "]: login on application");
 
         String sauce_user_name = System.getenv("SAUCE_USER_NAME");
         String sauce_api_key = System.getenv("SAUCE_API_KEY");
