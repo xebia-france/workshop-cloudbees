@@ -233,6 +233,7 @@ hr {
 
 table {
   border: 1px solid #373737;
+  margin-top: 20px;
   margin-bottom: 20px;
   text-align: left;
  }
