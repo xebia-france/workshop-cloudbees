@@ -28,7 +28,7 @@ public class LoginSelenium {
 
         DesiredCapabilities capabillities = DesiredCapabilities.firefox();
         capabillities.setCapability("version", "5");
-        capabillities.setCapability("platform", Platform.MAC);
+        capabillities.setCapability("platform", Platform.WINDOWS);
         capabillities.setCapability("name", "[" +  groupId + "]: login on application");
 
         String sauce_user_name = System.getenv("SAUCE_USER_NAME");
